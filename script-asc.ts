@@ -74,7 +74,7 @@ var eve2=new event("Guns ‘n Roses", "Vienna", 1020, "Ernst-Happel Stadion, Mei
 places.push(eve1, eve2)
 
 places.sort((a, b)=>{
-	return (new Date(a.timestamp)-new Date(b.timestamp))
+	return (new Date(b.timestamp)-new Date(a.timestamp))
 })
 
 for(let i=0; i<places.length; i++){

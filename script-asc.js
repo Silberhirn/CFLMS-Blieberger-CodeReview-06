@@ -86,7 +86,7 @@ $(document).ready(function () {
     var eve2 = new event("Guns ‘n Roses", "Vienna", 1020, "Ernst-Happel Stadion, Meiereistraße 7", "img/guns.jpg", "2020/06/09 19:30", "Sat. 09.06.2020", "19:30", "€ 95,50");
     places.push(eve1, eve2);
     places.sort(function (a, b) {
-        return (new Date(a.timestamp) - new Date(b.timestamp));
+        return (new Date(b.timestamp) - new Date(a.timestamp));
     });
     for (var i = 0; i < places.length; i++) {
         places[i].display();
